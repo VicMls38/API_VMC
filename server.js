@@ -22,6 +22,6 @@ app.get("/info", (req, res) => res.json({
 }));
 
 // Démarrer le serveur HTTP
-app.listen(HTTP_PORT, () => {
+app.listen(HTTP_PORT,'0.0.0.0', () => {
     console.log(`✅ Serveur HTTP démarré sur http://10.112.131.117:${HTTP_PORT}`);
 });
